@@ -1,5 +1,13 @@
 import React from 'react';
+import Button from 'components/atoms/Button';
+import GlobalStyle from 'theme/GlobalStyle';
 
-const Root = () => <h1>Hello Greyhaired</h1>;
-
+const Root = () => (
+  <>
+    <GlobalStyle />
+    <h1>pingFlaming</h1>
+    <Button>Zatwierdź zmiany</Button>
+    <Button secondary>Anuluj</Button>
+  </>
+);
 export default Root;
