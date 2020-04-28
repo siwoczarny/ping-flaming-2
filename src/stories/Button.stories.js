@@ -6,4 +6,5 @@ export default {
   component: Button,
 };
 
-export const SaveButton = () => <Button>Zatwierdź zmiany</Button>;
+export const Save = () => <Button>Zatwierdź zmiany</Button>;
+export const Cancel = () => <Button secondary>Anuluj</Button>;
