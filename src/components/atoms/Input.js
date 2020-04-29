@@ -8,7 +8,7 @@ const Input = styled.input`
   font-size: ${({ theme }) => theme.fontSize.xs};
   line-height: 1.71;
   letter-spacing: 0.3px;
-  color: ${({ theme }) => theme.black};
+  color: ${({ theme }) => theme.dark};
   border: 1px solid;
   border-color: ${({ theme }) => theme.midgrey};
   border-radius: 8px;
@@ -16,6 +16,7 @@ const Input = styled.input`
 
   ::placeholder {
     color: ${({ theme }) => theme.blueygrey};
+    opacity: 1;
   }
 `;
 

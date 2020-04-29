@@ -19,7 +19,6 @@ const StyledInput = styled(Input)`
 
   ::placeholder {
     color: ${({ theme }) => theme.white};
-    opacity: 1;
   }
 `;
 
