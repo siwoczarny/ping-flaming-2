@@ -10,7 +10,7 @@ export const theme = {
   medium: 500,
   bold: 700,
   fontSize: {
-    xxs: '1rem',
+    xxs: '1.2rem',
     xs: '1.4rem',
     s: '1.6rem',
     m: '1.8rem',

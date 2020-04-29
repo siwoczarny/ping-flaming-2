@@ -6,5 +6,4 @@ export default {
   component: Heading,
 };
 
-export const Normal = () => <Heading>Tytuł</Heading>;
-export const Big = () => <Heading big>Dodaj nowe zadanie</Heading>;
+export const Normal = () => <Heading>Dodaj nowe zadanie</Heading>;
