@@ -17,7 +17,7 @@ const ButtonAddNewTask = styled.button`
   ${({ transparent }) =>
     transparent &&
     css`
-      background-color: inherit;
+      background-color: transparent;
       background-size: 64px;
     `}
 `;

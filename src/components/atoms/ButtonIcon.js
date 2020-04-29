@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const ButtonIcon = styled.button`
   display: block;
@@ -13,6 +13,12 @@ const ButtonIcon = styled.button`
   background-color: ${({ theme }) => theme.dimgrey};
   outline: none;
   cursor: pointer;
+
+  ${({ transparent }) =>
+    transparent &&
+    css`
+      background-color: transparent;
+    `}
 `;
 
 export default ButtonIcon;
