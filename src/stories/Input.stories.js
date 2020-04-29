@@ -6,4 +6,4 @@ export default {
   component: Input,
 };
 
-export const Title = () => <Input placeholder="Wpisz tytuł swojego zadania" />;
+export const Normal = () => <Input placeholder="Wpisz tytuł swojego zadania" />;

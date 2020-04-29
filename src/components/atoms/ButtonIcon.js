@@ -14,6 +14,19 @@ const ButtonIcon = styled.button`
   outline: none;
   cursor: pointer;
 
+  ${({ caption }) =>
+    caption &&
+    css`
+      width: 56px;
+      height: 56px;
+      padding: 32px 0 0 0;
+      font-size: ${({ theme }) => theme.fontSize.xxs};
+      line-height: 1.33;
+      letter-spacing: 0.4px;
+      background-position: 50% 25%;
+      color: ${({ theme }) => theme.white};
+    `}
+
   ${({ transparent }) =>
     transparent &&
     css`

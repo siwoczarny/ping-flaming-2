@@ -16,9 +16,17 @@ export default {
 
 export const Plus = () => <ButtonIcon icon={plusIcon} />;
 export const Search = () => <ButtonIcon icon={magnifierIcon} />;
-export const Delete = () => <ButtonIcon icon={deleteIcon} />;
-export const Edit = () => <ButtonIcon icon={editIcon} />;
 export const More = () => <ButtonIcon icon={moreIcon} />;
+export const Delete = () => (
+  <ButtonIcon caption icon={deleteIcon}>
+    Usuń
+  </ButtonIcon>
+);
+export const Edit = () => (
+  <ButtonIcon caption icon={editIcon}>
+    Edytuj
+  </ButtonIcon>
+);
 export const Down = () => <ButtonIcon transparent icon={downIcon} />;
 export const Rectangle = () => <ButtonIcon transparent icon={rectangleIcon} />;
 export const Cross = () => <ButtonIcon transparent icon={crossIcon} />;
