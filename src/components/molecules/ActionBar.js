@@ -10,7 +10,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledAvatar = styled.img`
-  margin: 0 8px 0 0;
+  margin: 0 8px 0 32px;
   width: 48px;
   height: 48px;
   border: 2px solid;

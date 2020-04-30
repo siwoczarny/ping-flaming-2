@@ -10,6 +10,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledInput = styled(Input)`
+  margin: 0 0 0 32px;
   padding: 8px 48px 8px 16px;
   width: 350px;
   height: 48px;
