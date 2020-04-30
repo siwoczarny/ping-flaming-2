@@ -3,7 +3,9 @@
     "env": {
         "jest": true
     },
+    "parser": "babel-eslint",
     "globals": {
+        "window": true,
         "document": true
     },
     "rules": {
