@@ -1,19 +1,19 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import Button from 'components/atoms/Button';
-import GlobalStyle from 'theme/GlobalStyle';
-import { theme } from 'theme/mainTheme';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import MainTemplate from 'templates/MainTemplate';
+import UserPage from 'views/UserPage';
+import LoginPage from 'views/LoginPage';
+import RegisterPage from 'views/RegisterPage';
 
 const Root = () => (
-  <div>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>
-      <>
-        <h1>pingFlaming</h1>
-        <Button>Zatwierdź zmiany</Button>
-        <Button secondary>Anuluj</Button>
-      </>
-    </ThemeProvider>
-  </div>
+  <MainTemplate>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={UserPage} />
+        <Route path="/login" component={LoginPage} />
+        <Route path="/register" component={RegisterPage} />
+      </Switch>
+    </BrowserRouter>
+  </MainTemplate>
 );
 export default Root;

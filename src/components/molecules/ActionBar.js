@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Button from 'components/atoms/Button';
 import ButtonIcon from 'components/atoms/ButtonIcon';
 import downIcon from 'assets/icons/down.svg';
@@ -50,7 +51,7 @@ const StyledList = styled.div`
   background-color: ${({ theme }) => theme.dimgrey};
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,7 +69,7 @@ const InnerWrapper = styled.div`
 `;
 
 const ActionBar = () => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   function toggleUserList() {
     setOpen(!open);
@@ -82,7 +83,7 @@ const ActionBar = () => {
       {open ? (
         <StyledList>
           <InnerWrapper>
-            <StyledLink href="...">
+            <StyledLink to="/login">
               Wyloguj się
               <ButtonIcon icon={logOutIcon} />
             </StyledLink>
