@@ -26,8 +26,8 @@ const InnerWrapper = styled.div`
   ${({ header }) =>
     header &&
     css`
-      height: 56px;
       position: relative;
+      height: 56px;
       text-align: center;
       background-color: ${({ theme }) => theme.blueygrey};
     `}

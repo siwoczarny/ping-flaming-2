@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
 
 const StyledInput = styled(Input)`
   margin: 0 0 0 32px;
-  padding: 12px 48px 12px 16px;
+  padding: 12px 48px 12px 8px;
   width: 350px;
   height: 48px;
   color: ${({ theme }) => theme.white};
