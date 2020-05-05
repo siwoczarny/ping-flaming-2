@@ -15,6 +15,7 @@ const Title = styled.h4`
       font-weight: ${({ theme }) => theme.light};
       line-height: 1.33;
       letter-spacing: 0.4px;
+      color: ${({ theme }) => theme.white};
       opacity: 0.6;
     `}
 
@@ -23,9 +24,9 @@ const Title = styled.h4`
     css`
       font-size: ${({ theme }) => theme.fontSize.s};
       font-weight: ${({ theme }) => theme.bold};
-      color: ${({ theme }) => theme.white};
       line-height: 1.5;
       letter-spacing: 0.2px;
+      color: ${({ theme }) => theme.white};
     `}
 `;
 
