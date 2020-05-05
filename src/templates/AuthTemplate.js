@@ -8,13 +8,23 @@ import flamingRight from 'assets/images/flaming-2.svg';
 const MainWrapper = styled.div`
   width: 100%;
   min-height: 100vh;
-  /* background-color: ${({ theme }) => theme.dark}; */
+  background-color: ${({ theme }) => theme.dark};
+`;
+
+const StyledWrapper = styled.div`
+  margin: 0 auto;
+  padding: 24px 0;
+  width: 464px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const StyledLogo = styled.img`
+  margin: 0 auto;
+  padding: 80px 0 0 0;
   display: flex;
-  margin: 80px auto 0;
-  background-color: ${({ theme }) => theme.dark};
 `;
 
 const StyledFlaming = styled.img`
@@ -41,7 +51,7 @@ const StyledFlaming = styled.img`
 const AuthTemplate = ({ children }) => (
   <MainWrapper>
     <StyledLogo src={logo} />
-    {children}
+    <StyledWrapper>{children}</StyledWrapper>
     <StyledFlaming left src={flamingLeft} />
     <StyledFlaming right src={flamingRight} />
   </MainWrapper>

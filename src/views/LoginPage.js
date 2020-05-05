@@ -8,15 +8,6 @@ import showIcon from 'assets/icons/show.svg';
 import TextLink from 'components/atoms/TextLink';
 import Button from 'components/atoms/Button';
 
-const StyledWrapper = styled.div`
-  margin: 0 auto;
-  width: 464px;
-  height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
-
 const InnerWrapper = styled.div`
   margin: 8px 28px 16px 28px;
   position: relative;
@@ -59,28 +50,26 @@ const StyledButton = styled(Button)`
 
 const LoginPage = () => (
   <AuthTemplate>
-    <StyledWrapper>
-      <StyledTitle big>
-        Ping Flaming to narzędzie ułatwiające organizację Twojej pracy, życia i wszystkiego, co
-        potrzebuje organizacji.
-        <br />
-        Zaloguj się i działaj!
-      </StyledTitle>
-      <StyledTitle>Login</StyledTitle>
-      <InnerWrapper>
-        <StyledInput placeholder="Podaj swój login" />
-      </InnerWrapper>
-      <StyledTitle>Hasło</StyledTitle>
-      <InnerWrapper>
-        <StyledInput placeholder="Podaj swoje hasło" />
-        <StyledButtonIcon transparent icon={showIcon} />
-      </InnerWrapper>
-      <InnerWrapper flex>
-        <TextLink>Przypomnij hasło</TextLink>
-        <TextLink to="/register">Zarejestruj się!</TextLink>
-      </InnerWrapper>
-      <StyledButton>Zaloguj mnie</StyledButton>
-    </StyledWrapper>
+    <StyledTitle big>
+      Ping Flaming to narzędzie ułatwiające organizację Twojej pracy, życia i wszystkiego, co
+      potrzebuje organizacji.
+      <br />
+      Zaloguj się i działaj!
+    </StyledTitle>
+    <StyledTitle>Login</StyledTitle>
+    <InnerWrapper>
+      <StyledInput placeholder="Podaj swój login" />
+    </InnerWrapper>
+    <StyledTitle>Hasło</StyledTitle>
+    <InnerWrapper>
+      <StyledInput placeholder="Podaj swoje hasło" />
+      <StyledButtonIcon transparent icon={showIcon} />
+    </InnerWrapper>
+    <InnerWrapper flex>
+      <TextLink>Przypomnij hasło</TextLink>
+      <TextLink to="/register">Zarejestruj się!</TextLink>
+    </InnerWrapper>
+    <StyledButton>Zaloguj mnie</StyledButton>
   </AuthTemplate>
 );
 
