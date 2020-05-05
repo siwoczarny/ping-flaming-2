@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const ButtonAddNewTask = styled.button`
+const ButtonAdd = styled.button`
   display: block;
   width: 64px;
   height: 64px;
@@ -22,4 +22,4 @@ const ButtonAddNewTask = styled.button`
     `}
 `;
 
-export default ButtonAddNewTask;
+export default ButtonAdd;

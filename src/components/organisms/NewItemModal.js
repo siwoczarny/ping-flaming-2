@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Heading from 'components/atoms/Heading';
 import ButtonIcon from 'components/atoms/ButtonIcon';
@@ -9,15 +10,18 @@ import crossIcon from 'assets/icons/cross.svg';
 import { Formik, Form } from 'formik';
 
 const StyledModal = styled.div`
-  margin: 112px auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 50vw;
   max-width: 624px;
   height: auto;
-  display: flex;
+  display: ${({ isVisible }) => (isVisible ? 'flex' : 'none')};
   flex-direction: column;
   border-radius: 8px;
   background-color: #fff;
   overflow: hidden;
+  transform: translate(-50%, -50%);
 `;
 
 const InnerWrapper = styled.div`
@@ -63,12 +67,12 @@ const StyledInput = styled(Input)`
     `}
 `;
 
-const NewItemModal = () => {
+const NewItemModal = ({ isVisible, handleClose }) => {
   return (
-    <StyledModal>
+    <StyledModal isVisible={isVisible}>
       <InnerWrapper header>
         <Heading>Dodaj nowe zadanie</Heading>
-        <StyledButtonIcon transparent icon={crossIcon} />
+        <StyledButtonIcon transparent icon={crossIcon} onClick={handleClose} />
       </InnerWrapper>
       <Formik>
         <StyledForm>
@@ -98,6 +102,15 @@ const NewItemModal = () => {
       </Formik>
     </StyledModal>
   );
+};
+
+NewItemModal.propTypes = {
+  isVisible: PropTypes.bool,
+  handleClose: PropTypes.func.isRequired,
+};
+
+NewItemModal.defaultProps = {
+  isVisible: false,
 };
 
 export default NewItemModal;
