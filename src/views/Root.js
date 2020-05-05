@@ -1,17 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { routes } from 'routes';
 import MainTemplate from 'templates/MainTemplate';
-import UserPage from 'views/UserPage';
+import MainPage from 'views/MainPage';
 import LoginPage from 'views/LoginPage';
 import RegisterPage from 'views/RegisterPage';
 
 const Root = () => (
   <MainTemplate>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route exact path="/" component={UserPage} />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/register" component={RegisterPage} />
+        <Route exact path={routes.home} component={MainPage} />
+        <Route path={routes.login} component={LoginPage} />
+        <Route path={routes.register} component={RegisterPage} />
       </Switch>
     </BrowserRouter>
   </MainTemplate>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { routes } from 'routes';
 import AuthTemplate from 'templates/AuthTemplate';
 import Title from 'components/atoms/Title';
 import Input from 'components/atoms/Input';
@@ -67,7 +68,7 @@ const LoginPage = () => (
     </InnerWrapper>
     <InnerWrapper flex>
       <TextLink>Przypomnij hasło</TextLink>
-      <TextLink to="/register">Zarejestruj się!</TextLink>
+      <TextLink to={routes.register}>Zarejestruj się!</TextLink>
     </InnerWrapper>
     <StyledButton>Zaloguj mnie</StyledButton>
   </AuthTemplate>

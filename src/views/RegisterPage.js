@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { routes } from 'routes';
 import AuthTemplate from 'templates/AuthTemplate';
 import Title from 'components/atoms/Title';
 import Input from 'components/atoms/Input';
@@ -71,8 +72,8 @@ const RegisterPage = () => (
       <StyledButtonIcon transparent icon={showIcon} />
     </InnerWrapper>
     <InnerWrapper flex>
-      <TextLink to="/">Zobacz demo</TextLink>
-      <TextLink to="/login">Zaloguj się!</TextLink>
+      <TextLink to={routes.home}>Zobacz demo</TextLink>
+      <TextLink to={routes.login}>Zaloguj się!</TextLink>
     </InnerWrapper>
     <StyledButton>Zarejestruj mnie</StyledButton>
   </AuthTemplate>
