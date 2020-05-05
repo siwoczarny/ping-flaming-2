@@ -1,9 +1,9 @@
 import React from 'react';
-import GridTemplate from 'templates/GridTemplate';
+import ColumnTemplate from 'templates/ColumnTemplate';
 
 const UserPage = () => (
   <>
-    <GridTemplate />
+    <ColumnTemplate />
   </>
 );
 

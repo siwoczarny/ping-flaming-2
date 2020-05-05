@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Header from 'components/organisms/Header';
 
-const UserPageTemplate = ({ children }) => (
+const UserTemplate = ({ children }) => (
   <>
     <Header />
     {children}
   </>
 );
 
-UserPageTemplate.propTypes = {
+UserTemplate.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]).isRequired,
 };
 
-export default UserPageTemplate;
+export default UserTemplate;

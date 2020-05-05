@@ -30,12 +30,12 @@ const StyledButton = styled(Button)`
   color: ${({ theme }) => theme.white};
   border: none;
   background-color: ${({ theme }) => theme.dimgrey};
-  z-index: 9998;
+  z-index: 9997;
 `;
 
 const StyledButtonIcon = styled(ButtonIcon)`
   transform: translateX(-40px);
-  z-index: 9999;
+  z-index: 9998;
 `;
 
 const StyledList = styled.div`

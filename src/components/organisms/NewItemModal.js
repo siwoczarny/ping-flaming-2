@@ -18,9 +18,12 @@ const StyledModal = styled.div`
   height: auto;
   display: ${({ isVisible }) => (isVisible ? 'flex' : 'none')};
   flex-direction: column;
+  border: 1px solid;
+  border-color: ${({ theme }) => theme.blueygrey};
   border-radius: 8px;
   background-color: #fff;
   overflow: hidden;
+  z-index: 9999;
   transform: translate(-50%, -50%);
 `;
 
