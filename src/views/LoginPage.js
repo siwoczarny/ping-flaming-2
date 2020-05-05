@@ -1,8 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import logo from 'assets/logo/logo-name.svg';
-import flamingLeft from 'assets/images/flaming-1.svg';
-import flamingRight from 'assets/images/flaming-2.svg';
+import AuthTemplate from 'templates/AuthTemplate';
 import Title from 'components/atoms/Title';
 import Input from 'components/atoms/Input';
 import ButtonIcon from 'components/atoms/ButtonIcon';
@@ -10,15 +8,10 @@ import showIcon from 'assets/icons/show.svg';
 import TextLink from 'components/atoms/TextLink';
 import Button from 'components/atoms/Button';
 
-const MainWrapper = styled.div`
-  width: 100%;
-  min-height: 100vh;
-`;
-
 const StyledWrapper = styled.div`
-  margin: 72px auto 0;
+  margin: 0 auto;
   width: 464px;
-  height: 560px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,32 +28,6 @@ const InnerWrapper = styled.div`
       display: flex;
       justify-content: space-between;
     `}
-`;
-
-const StyledFlaming = styled.img`
-  position: absolute;
-
-  ${({ left }) =>
-    left &&
-    css`
-      top: 188px;
-      left: 0;
-      width: auto;
-      height: 392px;
-      transform: scaleX(-1) translateX(67px);
-    `}
-
-  ${({ right }) =>
-    right &&
-    css`
-      top: 229px;
-      right: 0;
-    `}
-`;
-
-const StyledLogo = styled.img`
-  margin: 0 0 24px 0;
-  background-color: ${({ theme }) => theme.dark};
 `;
 
 const StyledTitle = styled(Title)`
@@ -91,9 +58,8 @@ const StyledButton = styled(Button)`
 `;
 
 const LoginPage = () => (
-  <MainWrapper>
+  <AuthTemplate>
     <StyledWrapper>
-      <StyledLogo src={logo} />
       <StyledTitle big>
         Ping Flaming to narzędzie ułatwiające organizację Twojej pracy, życia i wszystkiego, co
         potrzebuje organizacji.
@@ -111,13 +77,11 @@ const LoginPage = () => (
       </InnerWrapper>
       <InnerWrapper flex>
         <TextLink>Przypomnij hasło</TextLink>
-        <TextLink>Zarejestruj się!</TextLink>
+        <TextLink to="/register">Zarejestruj się!</TextLink>
       </InnerWrapper>
       <StyledButton>Zaloguj mnie</StyledButton>
     </StyledWrapper>
-    <StyledFlaming left src={flamingLeft} />
-    <StyledFlaming right src={flamingRight} />
-  </MainWrapper>
+  </AuthTemplate>
 );
 
 export default LoginPage;
