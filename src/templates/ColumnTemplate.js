@@ -15,6 +15,15 @@ const ColumnTemplate = () => (
     <div>
       <h5>D</h5>
     </div>
+    <div>
+      <h5>E</h5>
+    </div>
+    <div>
+      <h5>F</h5>
+    </div>
+    <div>
+      <h5>G</h5>
+    </div>
   </CarouselTemplate>
 );
 
