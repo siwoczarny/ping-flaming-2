@@ -14,6 +14,7 @@ const Input = styled.input`
   border-color: ${({ theme }) => theme.midgrey};
   border-radius: 8px;
   background-color: ${({ theme }) => theme.white};
+  outline: none;
 
   ::placeholder {
     font-weight: ${({ theme }) => theme.light};

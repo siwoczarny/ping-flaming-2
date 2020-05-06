@@ -20,10 +20,10 @@ const StyledWrapper = styled.div`
 const StyledTitle = styled(Title)`
   margin: 0;
 
-  ${({ main }) =>
-    main &&
+  ${({ small }) =>
+    small &&
     css`
-      margin: 0 0 8px 0;
+      margin: 16px 0 0;
     `}
 `;
 
@@ -39,15 +39,14 @@ const InnerWrapper = styled.div`
 
 const Card = () => (
   <StyledWrapper>
-    <StyledTitle big main>
-      Title
-    </StyledTitle>
+    <StyledTitle big>Title</StyledTitle>
     <StyledTitle small>Opis</StyledTitle>
     <StyledParagraph>
       Curabitur tincidunt at, mollis nibh risus, pellentesque a, dui. Integer aliquet molestie.
       Vivamus iaculis, diam vitae wisi nunc, fringilla mollis. Proin volutpat a, convallis accumsan,
       dolor auctor tincidunt. Sed sit amet dui sodales lectus varius vitae, lorem
     </StyledParagraph>
+    <StyledTitle small>Tagi</StyledTitle>
     <InnerWrapper>
       <ButtonIcon icon={deleteIcon} caption>
         Usuń

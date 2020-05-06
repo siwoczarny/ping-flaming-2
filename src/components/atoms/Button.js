@@ -13,6 +13,7 @@ const Button = styled.button`
   border-radius: 8px;
   background-color: ${({ theme }) => theme.pink};
   cursor: pointer;
+  outline: none;
 
   ${({ secondary }) =>
     secondary &&

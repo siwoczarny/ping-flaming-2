@@ -8,8 +8,9 @@ import logOutIcon from 'assets/icons/log-out.svg';
 
 const StyledWrapper = styled.div`
   position: relative;
-  width: min-content;
+  width: 414px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 `;
 
@@ -41,7 +42,7 @@ const StyledButtonIcon = styled(ButtonIcon)`
 const StyledList = styled.div`
   position: absolute;
   top: -1px;
-  left: 63px;
+  right: 31px;
   padding: 48px 8px 8px 8px;
   width: 258px;
   height: 98px;
@@ -77,8 +78,8 @@ const ActionBar = () => {
 
   return (
     <StyledWrapper>
-      <StyledAvatar src="https://avatars.io/twitter/siwoczarny" />
-      <StyledButton onClick={toggleUserList}>siwoczarny</StyledButton>
+      <StyledAvatar src="https://api.adorable.io/avatars/face/eyes7/nose3/mouth9/504C75" />
+      <StyledButton onClick={toggleUserList}>użytkownik71</StyledButton>
       <StyledButtonIcon icon={downIcon} onClick={toggleUserList} />
       {open ? (
         <StyledList>

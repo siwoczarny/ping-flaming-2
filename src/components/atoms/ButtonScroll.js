@@ -9,7 +9,7 @@ const ButtonScroll = styled.button`
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 24px;
-  background-color: ${({ theme }) => theme.dimgrey};
+  background-color: ${({ theme }) => theme.pink};
   outline: none;
   cursor: pointer;
 

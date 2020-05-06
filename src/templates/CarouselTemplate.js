@@ -12,9 +12,10 @@ import leftArrow from 'assets/icons/left.svg';
 import rightArrow from 'assets/icons/right.svg';
 
 const StyledWrapper = styled.div`
-  padding: 32px 48px;
+  position: relative;
+  padding: 32px 48px 96px;
   width: 100%;
-  min-height: calc(100vh - 112px);
+  min-height: calc(100vh - 152px);
   background-color: ${({ theme }) => theme.dark};
 `;
 
@@ -27,7 +28,7 @@ const StyledButtonAdd = styled(ButtonAdd)`
 
 const StyledButtonScroll = styled(ButtonScroll)`
   position: fixed;
-  top: 144px;
+  top: 184px;
 
   ${({ left }) =>
     left &&
