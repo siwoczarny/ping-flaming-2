@@ -7,8 +7,9 @@ import deleteIcon from 'assets/icons/delete.svg';
 import editIcon from 'assets/icons/edit.svg';
 
 const StyledWrapper = styled.div`
+  margin: 8px 0;
   padding: 16px;
-  width: 320px;
+  width: 100%;
   min-height: 256px;
   display: flex;
   flex-direction: column;

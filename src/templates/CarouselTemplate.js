@@ -12,9 +12,10 @@ import leftArrow from 'assets/icons/left.svg';
 import rightArrow from 'assets/icons/right.svg';
 
 const StyledWrapper = styled.div`
-  margin: 16px 0 0;
-  padding: 0 48px;
+  padding: 32px 48px;
   width: 100%;
+  min-height: calc(100vh - 112px);
+  background-color: ${({ theme }) => theme.dark};
 `;
 
 const StyledButtonAdd = styled(ButtonAdd)`
@@ -26,6 +27,8 @@ const StyledButtonAdd = styled(ButtonAdd)`
 
 const StyledButtonScroll = styled(ButtonScroll)`
   position: fixed;
+  top: 144px;
+
   ${({ left }) =>
     left &&
     css`
@@ -56,32 +59,26 @@ class CarouselTemplate extends Component {
       desktopLarge: {
         breakpoint: { max: 5000, min: 2100 },
         items: 4,
-        partialVisibilityGutter: 30,
       },
       desktop: {
         breakpoint: { max: 2099, min: 1200 },
         items: 4,
-        partialVisibilityGutter: 20,
       },
       tabletLarge: {
         breakpoint: { max: 1199, min: 992 },
         items: 3,
-        partialVisibilityGutter: 20,
       },
       tabletSmall: {
         breakpoint: { max: 991, min: 768 },
         items: 3,
-        partialVisibilityGutter: 10,
       },
       mobileLarge: {
         breakpoint: { max: 767, min: 576 },
         items: 2,
-        partialVisibilityGutter: 0,
       },
       mobile: {
         breakpoint: { max: 575, min: 0 },
         items: 1,
-        partialVisibilityGutter: 0,
       },
     };
 
