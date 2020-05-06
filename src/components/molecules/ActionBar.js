@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledAvatar = styled.img`
-  margin: 0 8px 0 32px;
+  margin: 0 8px;
   width: 48px;
   height: 48px;
   border: 2px solid;
@@ -41,7 +41,7 @@ const StyledButtonIcon = styled(ButtonIcon)`
 const StyledList = styled.div`
   position: absolute;
   top: -1px;
-  left: 87px;
+  left: 63px;
   padding: 48px 8px 8px 8px;
   width: 258px;
   height: 98px;

@@ -5,6 +5,7 @@ import SearchBar from 'components/molecules/SearchBar';
 import logo from 'assets/logo/logo.svg';
 
 const StyledWrapper = styled.div`
+  padding: 0 24px;
   width: 100%;
   height: 112px;
   display: flex;

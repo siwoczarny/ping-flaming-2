@@ -22,7 +22,7 @@ const StyledButtonAdd = styled(ButtonAdd)`
   display: ${({ isVisible }) => (isVisible ? 'none' : 'initial')};
   position: fixed;
   bottom: 24px;
-  right: 32px;
+  right: 56px;
 `;
 
 const StyledButtonScroll = styled(ButtonScroll)`

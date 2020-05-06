@@ -8,7 +8,7 @@ import rectangleIcon from 'assets/icons/rectangle.svg';
 import Card from 'components/molecules/Card';
 
 const ColumnWrapper = styled.div`
-  padding: 0 8px;
+  padding: 0 7px;
   height: 100%;
   border-left: 1px dashed;
   border-right: 1px dashed;
