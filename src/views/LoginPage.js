@@ -63,7 +63,7 @@ const LoginPage = () => (
     </InnerWrapper>
     <StyledTitle>Hasło</StyledTitle>
     <InnerWrapper>
-      <StyledInput placeholder="Podaj swoje hasło" />
+      <StyledInput type="password" placeholder="Podaj swoje hasło" />
       <StyledButtonIcon transparent icon={showIcon} />
     </InnerWrapper>
     <InnerWrapper flex>

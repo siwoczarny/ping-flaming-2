@@ -10,13 +10,13 @@ import TextLink from 'components/atoms/TextLink';
 import Button from 'components/atoms/Button';
 
 const InnerWrapper = styled.div`
-  margin: 8px 28px 16px 28px;
+  margin: 8px 28px 16px;
   position: relative;
 
   ${({ flex }) =>
     flex &&
     css`
-      margin: 0px 28px 48px 28px;
+      margin: 0px 28px 28px;
       display: flex;
       justify-content: space-between;
     `}
@@ -29,7 +29,7 @@ const StyledTitle = styled(Title)`
   ${({ big }) =>
     big &&
     css`
-      margin: 0 0 56px 0;
+      margin: 0 0 28px;
       text-align: center;
     `}
 `;
@@ -63,12 +63,12 @@ const RegisterPage = () => (
     </InnerWrapper>
     <StyledTitle>Hasło</StyledTitle>
     <InnerWrapper>
-      <StyledInput placeholder="Podaj swoje hasło" />
+      <StyledInput type="password" placeholder="Podaj swoje hasło" />
       <StyledButtonIcon transparent icon={showIcon} />
     </InnerWrapper>
     <StyledTitle>Powtórz hasło</StyledTitle>
     <InnerWrapper>
-      <StyledInput placeholder="Powtórz swoje hasło" />
+      <StyledInput type="password" placeholder="Powtórz swoje hasło" />
       <StyledButtonIcon transparent icon={showIcon} />
     </InnerWrapper>
     <InnerWrapper flex>
