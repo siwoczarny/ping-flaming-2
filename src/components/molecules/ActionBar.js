@@ -25,7 +25,7 @@ const StyledAvatar = styled.img`
 
 const StyledButton = styled(Button)`
   padding: 8px 48px 8px 8px;
-  width: 256px;
+  width: 290px;
   height: 48px;
   text-align: left;
   color: ${({ theme }) => theme.white};
@@ -44,7 +44,7 @@ const StyledList = styled.div`
   top: -1px;
   right: 31px;
   padding: 48px 8px 8px 8px;
-  width: 258px;
+  width: 292px;
   height: 98px;
   border-radius: 8px;
   border: 1px solid;

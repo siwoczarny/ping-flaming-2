@@ -1,5 +1,6 @@
 {
   "name": "ping-flaming-2",
+  "homepage": "https://siwoczarny.github.io/ping-flaming-2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "formik": "^2.1.4",
+    "gh-pages": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -16,10 +18,12 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "BROWSER='firefox developer edition' react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },

@@ -43,6 +43,19 @@ const StyledButtonScroll = styled(ButtonScroll)`
     `}
 `;
 
+const StyledLink = styled.a`
+  position: absolute;
+  bottom: 0;
+  padding: 16px 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: ${({ theme }) => theme.fontSize.xs};
+  font-weight: ${({ theme }) => theme.medium};
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  color: ${({ theme }) => theme.slateygrey};
+  text-decoration: none;
+`;
+
 class CarouselTemplate extends Component {
   state = {
     isNewItemModalVisible: false,
@@ -111,6 +124,9 @@ class CarouselTemplate extends Component {
             isVisible={isNewItemModalVisible}
           />
           <NewItemModal handleClose={this.toggleNewItemModal} isVisible={isNewItemModalVisible} />
+          <StyledLink href="https://siwoczarny.github.io/ping-flaming/" target="_blank">
+            Poprzednia wersja PingFlaming
+          </StyledLink>
         </StyledWrapper>
       </UserTemplate>
     );
