@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.js": "/ping-flaming-2/static/js/main.d06614d9.chunk.js",
+    "main.js.map": "/ping-flaming-2/static/js/main.d06614d9.chunk.js.map",
+    "runtime-main.js": "/ping-flaming-2/static/js/runtime-main.faa4f95d.js",
+    "runtime-main.js.map": "/ping-flaming-2/static/js/runtime-main.faa4f95d.js.map",
+    "static/css/2.36d93137.chunk.css": "/ping-flaming-2/static/css/2.36d93137.chunk.css",
+    "static/js/2.7f370c59.chunk.js": "/ping-flaming-2/static/js/2.7f370c59.chunk.js",
+    "static/js/2.7f370c59.chunk.js.map": "/ping-flaming-2/static/js/2.7f370c59.chunk.js.map",
+    "index.html": "/ping-flaming-2/index.html",
+    "precache-manifest.e7dfba5776b9e17ca1fd7d26fbbbef6d.js": "/ping-flaming-2/precache-manifest.e7dfba5776b9e17ca1fd7d26fbbbef6d.js",
+    "service-worker.js": "/ping-flaming-2/service-worker.js",
+    "static/css/2.36d93137.chunk.css.map": "/ping-flaming-2/static/css/2.36d93137.chunk.css.map",
+    "static/js/2.7f370c59.chunk.js.LICENSE.txt": "/ping-flaming-2/static/js/2.7f370c59.chunk.js.LICENSE.txt",
+    "static/media/cross.svg": "/ping-flaming-2/static/media/cross.8af2367e.svg",
+    "static/media/delete.svg": "/ping-flaming-2/static/media/delete.f129d7d8.svg",
+    "static/media/down.svg": "/ping-flaming-2/static/media/down.b7019e51.svg",
+    "static/media/edit.svg": "/ping-flaming-2/static/media/edit.19f636a4.svg",
+    "static/media/flaming-1.svg": "/ping-flaming-2/static/media/flaming-1.07cfa315.svg",
+    "static/media/flaming-2.svg": "/ping-flaming-2/static/media/flaming-2.b11a296a.svg",
+    "static/media/left.svg": "/ping-flaming-2/static/media/left.108933bc.svg",
+    "static/media/log-out.svg": "/ping-flaming-2/static/media/log-out.f9ee298d.svg",
+    "static/media/logo-name.svg": "/ping-flaming-2/static/media/logo-name.ec1c933c.svg",
+    "static/media/logo.svg": "/ping-flaming-2/static/media/logo.59ffaaba.svg",
+    "static/media/magnifier.svg": "/ping-flaming-2/static/media/magnifier.9073fb03.svg",
+    "static/media/more.svg": "/ping-flaming-2/static/media/more.ab3b4cfa.svg",
+    "static/media/plus.svg": "/ping-flaming-2/static/media/plus.b7e7e409.svg",
+    "static/media/rectangle.svg": "/ping-flaming-2/static/media/rectangle.47c16507.svg",
+    "static/media/styles.css": "/ping-flaming-2/static/media/revicons.2feb69cc.eot",
+    "static/media/right.svg": "/ping-flaming-2/static/media/right.0ff702d8.svg",
+    "static/media/show.svg": "/ping-flaming-2/static/media/show.cc595825.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.faa4f95d.js",
+    "static/css/2.36d93137.chunk.css",
+    "static/js/2.7f370c59.chunk.js",
+    "static/js/main.d06614d9.chunk.js"
+  ]
+}
